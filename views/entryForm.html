@@ -1,0 +1,24 @@
+{% extends "views/base.html" %}
+
+{% block left %}
+<form action="/store_entry" method="POST">
+
+
+  <p>Enter Movie Title</p>
+
+  <p>
+    <label for="title">Title</label>
+    <input type="text" id="title" name="title"></input>
+  </p>
+  <p>
+    <label for="year">Year</label>
+    <input type="text" id="year" name="year"></input>
+  </p>
+  <p>
+    <label for="imdb">IMDB Id</label>
+    <input type="text" id="imdb" name="imdb"></input>
+  </p>
+
+  <input type="submit" value="Submit"/>
+</form>
+{% endblock %}
